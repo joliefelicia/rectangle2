@@ -1,8 +1,8 @@
 package com.company;
 import java.util.Scanner;
 public class Rectangle {
-    public float length;
-    public float width;
+    private float length;
+    private float width;
 
     Rectangle() {
         this.length=1;
