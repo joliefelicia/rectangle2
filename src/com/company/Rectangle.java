@@ -9,12 +9,10 @@ public class Rectangle {
         this.width=1;
     }
 
-    Rectangle(float w, float l) {
-        this.setRectangle(w, l);
-    }
-
     public void setRectangle(Scanner scan) {
+        System.out.println("length: ");
         this.length =scan.nextFloat();
+        System.out.println("width: ");
         this.width = scan.nextFloat();
     }
 
@@ -59,13 +57,13 @@ class Main {
         Scanner input=new Scanner(System.in);
         Rectangle r1=new Rectangle();
         System.out.println("Selamat datang di program rectangle");
-        System.out.println("length: ");
-        r1.setRectangle(input);
-        System.out.println("width: ");
         r1.setRectangle(input);
         System.out.println(r1.toString());
-        r1.luas(r1.getWidth(), r1.getLength());
-        r1.keliling(r1.getWidth(), r1.getLength());
+        float width=r1.getwidth();
+        float length=r1.getlength();
+
+        r1.luas(width, length);
+        r1.keliling(width,length);
 
 
 
