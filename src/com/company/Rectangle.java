@@ -13,9 +13,9 @@ public class Rectangle {
         this.setRectangle(w, l);
     }
 
-    public void setRectangle(float w, float l) {
-        this.length = l;
-        this.width = w;
+    public void setRectangle(Scanner scan) {
+        this.length =scan.nextFloat();
+        this.width = scan.nextFloat();
     }
 
     public float getlength() {
@@ -60,12 +60,12 @@ class Main {
         Rectangle r1=new Rectangle();
         System.out.println("Selamat datang di program rectangle");
         System.out.println("length: ");
-        r1.length=input.nextFloat();
+        r1.setRectangle(input);
         System.out.println("width: ");
-        r1.width=input.nextFloat();
+        r1.setRectangle(input);
         System.out.println(r1.toString());
-        r1.luas(r1.width, r1.length);
-        r1.keliling(r1.length,r1.width);
+        r1.luas(r1.getWidth(), r1.getLength());
+        r1.keliling(r1.getWidth(), r1.getLength());
 
 
 
